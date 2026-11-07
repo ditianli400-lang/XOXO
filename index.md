@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#0d0d0f">
 <title>Free sex</title>
+
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -16,13 +17,14 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '29143883788609210');
+fbq('init', '1144890321389774');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=29143883788609210&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1144890321389774&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+
 <style>
 :root {
   --bg: #0d0d0f;
@@ -158,7 +160,6 @@ button { cursor: pointer; font: inherit; border: none; background: none; color: 
 .empty {
   display: none; text-align: center; padding: 60px 20px; color: #666;
 }
-/* Arabic RTL support */
 html[dir="rtl"] .sec-title,
 html[dir="rtl"] .card-meta {
   direction: rtl;
@@ -438,10 +439,8 @@ document.addEventListener("DOMContentLoaded", function() {
   if (search) search.addEventListener("input", render);
   const langSel = $("#languageSelect");
   if (langSel) langSel.addEventListener("change", function(e) { setLang(e.target.value); });
-  // 底部大按鈕 → 直接下載 + 追蹤 bottom_big_download
   const bigBtn = $("#bigDownload");
   if (bigBtn) bigBtn.addEventListener("click", function(){ download('bottom_big_download'); });
-  // 查看更多按鈕 → 也直接下載 + 追蹤 bottom_see_more
   const moreBtn = $("#moreBtn");
   if (moreBtn) moreBtn.addEventListener("click", function(){ download('bottom_see_more'); });
   let pref = "auto";
@@ -457,4 +456,3 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 </body>
 </html>
-# Live
