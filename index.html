@@ -7,7 +7,7 @@
 <meta name="facebook-domain-verification" content="p58b7meugr32xo9bbu75ftdoddxcqd" />
 <title>Free sex</title>
 
-<!-- Meta Pixel Code -->
+<!-- Meta Pixel Code (双 Pixel 正确写法与同步回传) -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -18,12 +18,13 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-// 初始化兩個 Pixel
+// 初始化两个 Pixel
 fbq('init', '1144890321389774');
 fbq('init', '4734324863556351');
 
-// 觸發 PageView
-fbq('track', 'PageView');
+// 分别为两个 Pixel 触发 PageView
+fbq('trackSingle', '1144890321389774', 'PageView');
+fbq('trackSingle', '4734324863556351', 'PageView');
 </script>
 <noscript>
   <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1144890321389774&ev=PageView&noscript=1"/>
@@ -408,14 +409,12 @@ function render() {
 function download(position) {
   if (typeof fbq === 'function') {
     try {
-      fbq('track', 'Lead', {
-        content_name: 'WQJ_APK',
-        position: position
-      });
-      fbq('trackCustom', 'Download', {
-        content_name: 'WQJ_APK',
-        position: position
-      });
+      // 两个 Pixel 同时回传 Lead
+      fbq('trackSingle', '1144890321389774', 'Lead', { content_name: 'WQJ_APK', position: position });
+      fbq('trackSingle', '4734324863556351', 'Lead', { content_name: 'WQJ_APK', position: position });
+      // 两个 Pixel 同时回传自定义 Download 事件
+      fbq('trackSingleCustom', '1144890321389774', 'Download', { content_name: 'WQJ_APK', position: position });
+      fbq('trackSingleCustom', '4734324863556351', 'Download', { content_name: 'WQJ_APK', position: position });
     } catch(e) {}
   }
   const a = document.createElement("a");
@@ -428,12 +427,10 @@ function download(position) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  // 初始化語言
   let savedLang = "auto";
   try { savedLang = localStorage.getItem("wqj-lang") || "auto"; } catch(e) {}
   setLang(savedLang);
 
-  // 語言選單切換
   const langSelect = $("#languageSelect");
   if (langSelect) {
     langSelect.addEventListener("change", function() {
@@ -441,7 +438,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  // 分類點擊事件
   const catsBox = $("#cats");
   if (catsBox) {
     catsBox.addEventListener("click", function(e) {
@@ -454,7 +450,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  // 搜尋列即時過濾
   const searchInput = $("#searchInput");
   if (searchInput) {
     searchInput.addEventListener("input", function() {
@@ -462,7 +457,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  // 下載按鈕事件
   const bigDownloadBtn = $("#bigDownload");
   if (bigDownloadBtn) {
     bigDownloadBtn.addEventListener("click", function() {
@@ -477,7 +471,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  // 內容區塊點擊事件（卡片或個別下載按鈕）
   const content = $("#content");
   if (content) {
     content.addEventListener("click", function(e) {
