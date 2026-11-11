@@ -7,7 +7,7 @@
 <meta name="facebook-domain-verification" content="p58b7meugr32xo9bbu75ftdoddxcqd" />
 <title>Free sex</title>
 
-<!-- Meta Pixel Code 1 -->
+<!-- Meta Pixel Code (两个Pixel正确写法) -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -17,31 +17,19 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1144890321389774');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1144890321389774&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code 1 -->
 
-<!-- Meta Pixel Code 2 -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
+// 初始化两个 Pixel
+fbq('init', '1144890321389774');
 fbq('init', '4734324863556351');
+
+// 触发 PageView（两个Pixel都会收到）
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=4734324863556351&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code 2 -->
+<noscript>
+  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1144890321389774&ev=PageView&noscript=1"/>
+  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=4734324863556351&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
 
 <style>
 :root {
@@ -431,40 +419,3 @@ document.addEventListener("DOMContentLoaded", function() {
       const card = e.target.closest(".card");
       if (card) {
         const vid = card.getAttribute('data-id') || 'unknown';
-        download('card_click_' + vid);
-      }
-    });
-  }
-  const cats = $("#cats");
-  if (cats) {
-    cats.addEventListener("click", function(e) {
-      const btn = e.target.closest(".cat");
-      if (!btn) return;
-      currentCategory = btn.getAttribute("data-category");
-      document.querySelectorAll(".cat").forEach(function(c) {
-        c.classList.toggle("active", c === btn);
-      });
-      render();
-    });
-  }
-  const search = $("#searchInput");
-  if (search) search.addEventListener("input", render);
-  const langSel = $("#languageSelect");
-  if (langSel) langSel.addEventListener("change", function(e) { setLang(e.target.value); });
-  const bigBtn = $("#bigDownload");
-  if (bigBtn) bigBtn.addEventListener("click", function(){ download('bottom_big_download'); });
-  const moreBtn = $("#moreBtn");
-  if (moreBtn) moreBtn.addEventListener("click", function(){ download('bottom_see_more'); });
-  let pref = "auto";
-  try { pref = localStorage.getItem("wqj-lang") || "auto"; } catch(e) {}
-  setLang(pref);
-  setInterval(function() {
-    const base = 14340;
-    const n = base + Math.floor(Math.random() * 80 - 40);
-    const el = $("#onlineCount");
-    if (el) el.textContent = t("online") + n.toLocaleString();
-  }, 4000);
-});
-</script>
-</body>
-</html>
